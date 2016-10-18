@@ -1,0 +1,186 @@
+html{
+	width: 100%;
+	height:100%;
+	overflow-x:hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Josefin Sans', serif;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+
+nav{
+	
+	float: right;
+	width: 45%;
+}
+
+/* heading style */
+
+.heading{
+	height:85%;
+	width:100%;
+
+}
+.heading .banner{
+	height:100%;
+	background-size: cover;
+	background-position: center center;
+ 	background-repeat: no-repeat;
+	background-image: url("../images/baner.jpg");
+}
+
+.menu li{
+	display:inline-block;
+	padding-top:3%;
+	padding-bottom: 1%;
+	padding-right: 2%;
+	padding-left: 2%;
+	border-radius: 0% 0% 5% 5%;
+	font-family: 'Josefin Sans', serif;
+	font-weight: bold;
+	color:white;
+}
+
+.menu #current-category{
+	border-bottom: solid white;
+	background-color: rgb(27,28,28);
+}
+
+.menu li:hover{
+	border-bottom: solid white;
+	background-color: rgb(27,28,28);
+}
+.menu{
+	margin:0; 
+	list-style: none;
+}
+.menu .delimiter{
+	width: 2px;
+	background-color: gray;
+	height: 10px;
+}
+
+.page-title{
+	position: absolute;
+	top:25%;
+	right: 50%;
+}
+.page-title h1{
+	font-weight: lighter;
+	font-family: 'Pacifico', cursive, sans;
+	font-size: 5em;
+	color: white;
+	margin:0;
+}
+
+.page-title h3{
+	color: white;
+	font-size: 1.2em;
+	margin: 0;
+	margin-top: -30px;
+	margin-left: 90px;
+}
+
+.menu li a{
+	color: white;
+}
+
+
+/*page content style*/
+
+.page-body{
+	margin: 0;
+	background-color:#D1D6CE;
+	padding-bottom: 8px;
+}
+
+.category-bar{
+	margin: 0;
+	margin-bottom: 2em;
+	background-color: white;
+	padding-top:1%;
+	padding-bottom:0.5%;
+	padding-left: 8%;
+	box-shadow: 0px 4px 9px #888888;
+
+}
+
+/* reviews style */
+
+.review{
+	position: relative;
+	margin-right: 9%;
+	margin-left: 9%;
+	background-color:white;
+	height: 30%;
+	margin-bottom: 20px;
+	box-shadow: none;
+	transition: box-shadow 1s;
+}
+
+.review-text{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+#review-1-img{
+	background-image: url('../images/fc.jpg');
+	background-repeat: no-repeat;
+  	background-size: contain;
+  	height:415px;
+}
+
+#review-2-img{
+	background-image: url('../images/gf.jpg');
+	background-repeat: no-repeat;
+  	background-size: contain;
+  	width:30%;
+  	height: 415px;
+}
+.review-image{
+	float:left;
+	margin-right: 10px;
+	width: 30%;
+	clear: right;
+}
+
+.wraper-link{
+	position: absolute;
+	width:100%;
+	height:100%;
+	left: 0;
+    top: 0;;
+}
+
+.review:hover{
+	box-shadow: 5px 5px 10px #888888;
+	transition: box-shadow 0.5s;
+}
+
+/*other reviews- boxed menu */
+.boxed-menu ul li{
+	display: inline-block;
+	height:200px;
+	width:20%;
+}
+.boxed-menu #item1{
+	position: absolute;
+	background-image: url('../images/gf.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+.boxed-menu{
+	background-color: white;
+}
