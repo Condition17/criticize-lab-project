@@ -1,0 +1,160 @@
+#page-body{
+	margin: 0;
+	margin-bottom: 2%;
+	margin-left: 9%;
+	margin-right: 9%;
+	font-family: 'Josefin Sans', serif;
+	font-size: 18px;
+}
+
+#top{
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
+
+#top a{
+	padding-top: 4%;
+	padding-bottom: 4%;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color:black;
+}
+
+#top tr:hover{
+	background-color: #BDDBBB;
+}
+
+#top tr:first-child:hover{
+	background-color: transparent;
+}
+
+#table-header th{
+	padding-top:4%;
+	padding-bottom: 4%;
+	
+}
+
+#top td{
+	 border-bottom:2px solid #D1D6CE;
+}
+
+
+table { 
+    border-spacing: 0s;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 9px #888888;
+}
+
+
+
+/*bottom */
+
+.boxed-menu {
+	margin-top:-2em;
+	width:100%;
+	height: 540px;
+}
+
+.boxed-menu ul{
+	margin: 0;
+	margin-left:-1.6em;
+	float:left;
+	width:100%;
+	height:100%;
+}
+.boxed-menu ul li{
+	margin:0;
+	height:17em;
+	width:14%;
+	float:left;
+	list-style-type: none;
+}
+.boxed-menu{
+	padding-left: 0;
+}
+
+.boxed-menu #item1{
+	background-image: url('../images/gf.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.boxed-menu #item2{
+	background-image: url('../images/fc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boxed-menu #item3{
+	background-image: url('../images/sl.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boxed-menu #item3{
+	background-image: url('../images/sl.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boxed-menu #item4{
+	background-image: url('../images/falci.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item5{
+	background-image: url('../images/lincoln-large.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item6{
+	background-image: url('../images/martian1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boxed-menu #item7{
+	background-image: url('../images/dk.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boxed-menu #item8{
+	background-image: url('../images/scream.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item9{
+	background-image: url('../images/borat.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item10{
+	background-image: url('../images/titanic.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item11{
+	background-image: url('../images/brave.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item12{
+	background-image: url('../images/avatar.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item13{
+	background-image: url('../images/spectre.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.boxed-menu #item14{
+	background-image: url('../images/spider.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}

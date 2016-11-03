@@ -1,0 +1,113 @@
+#page-body{
+	margin: 0;
+	padding-bottom: 8px;
+	margin-left: 9%;
+	margin-right: 9%;
+	height: 70%;
+	font-family: 'Josefin Sans', serif;
+	font-size: 18px;
+}
+
+.suggestion{
+	height: 200px;
+	width:100%;
+	background-color: white;
+	margin-bottom: 20px;
+	box-shadow: none;
+	transition: box-shadow 0.5s;
+	position: relative;
+}
+
+.day{
+	width: 18%;
+	height: 100%;
+	background-color: white;
+	float:left;
+}
+
+.day p{
+	font-weight: bold;
+	padding:28%;
+	font-size: 30px;
+}
+.movie-image{
+	float: left;
+	height: 100%;
+	width:82%;
+	font-size: 30px;
+	text-align: center;
+}
+.movie-image h3{
+	padding: 6%;
+	color: white;
+}
+
+.front-link{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.suggestion:hover{
+	box-shadow: 3px 7px 12px -1px  rgba(0,0,0,0.75);
+	transition: box-shadow 0.5s;
+}
+
+#movie-image-1{
+	background-image: url('../images/week1.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 10%;
+    background-size:cover; 
+}
+
+#movie-image-2{
+	background-image: url('../images/week2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size:cover; 
+}
+
+#movie-image-3{
+	background-image: url('../images/week3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size:cover; 
+}
+
+#movie-image-4{
+	background-image: url('../images/week4.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 15% 16%;
+    background-size: cover; 
+}
+
+#movie-image-5{
+	background-image: url('../images/week5.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 12% 12%;
+    background-size: cover; 
+}
+
+#movie-image-6{
+	background-image: url('../images/week6.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 0% 20%;
+    background-size: cover; 
+}
+
+#movie-image-7{
+	background-image: url('../images/week7.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 0 -300%; 
+    background-size: cover; 
+}
+
