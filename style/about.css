@@ -1,44 +1,46 @@
+.info{
+	width:100%;
+	height: auto;
+    overflow:auto;
+}
 #page-body{
 	margin: 0;
 	padding-bottom: 8px;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 70%;
 	font-family: 'Josefin Sans', serif;
-	font-size: 18px;
+	font-size: 100%;
+	clear:both;
 }
 
 #aboutus{
+	overflow: hidden;
 	background-color:white;
-	height: 100%;
 	box-shadow: 0px 4px 9px #888888;
 	transition: box-shadow 1s;
-	width: 100%;
-	clear: both;
+	max-width: 60%;
 	margin-top: 3%;
-}
-
-#info,#social{
+	word-break: keep-all;
 	float: left;
-	height: 100%;
 }
-#info{
-	width: 70%;
 
-}
-#info h3{
+ #aboutus h3{
+ 	padding-top: 1em;
 	margin-left: 1em;
 	font-size: 25px;
 }
+
+#aboutus p{
+	padding: 0em 2em 1em 2em;
+	text-align: left;
+}
+
+
 #social h3{
 	font-size: 25px;
 	margin-left: 1em;
 }
-#info p{
-	padding-left: 2em;
-	padding-right: 2em;
-	text-align: left;
-}
+
 #social p{
 	padding-left: 2em;
 	text-align: center;
@@ -48,9 +50,12 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 30%;
+	min-width: 40%;
+	position: relative;
 	color:white;
 	font-weight: bold;
+	float:left;
+	margin-top: 3%;
 }
 
 #social ul{
