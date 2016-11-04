@@ -1,28 +1,17 @@
-.info{
-	width:100%;
-	height: auto;
-    overflow:auto;
-}
+/* page-body */
+
 #page-body{
-	margin: 0;
-	padding-bottom: 8px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 0% 5% 2% 5%;
 	font-family: 'Josefin Sans', serif;
 	font-size: 100%;
 	clear:both;
+	margin-top: 3%;
+	float:left;
+	height:auto;
 }
 
-#aboutus{
-	overflow: hidden;
-	background-color:white;
-	box-shadow: 0px 4px 9px #888888;
-	transition: box-shadow 1s;
-	max-width: 60%;
-	margin-top: 3%;
-	word-break: keep-all;
-	float: left;
-}
+/* about us part */
+
 
  #aboutus h3{
  	padding-top: 1em;
@@ -35,8 +24,47 @@
 	text-align: left;
 }
 
+#aboutus{
+	overflow: auto;
+	background-color:white;
+	box-shadow: 0px 4px 9px #888888;
+	transition: box-shadow 1s;
+	word-break: keep-all;
+	float: left;
+	width: 100%;
+}
+
+
+/* social details part */
+
+#social{
+	background-image: url("../images/social.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #A93535;
+	color: white;
+	float: left;
+	width: 100%;
+}
+
+#social ul{
+	padding-top:1em;
+	text-align: center;
+	list-style: none;
+	font-size: 1.8em;
+}
+
+#social li{
+	margin-top: 10px;
+}
+
+#social a{
+	color: white;
+}
 
 #social h3{
+	padding-top: 1em;
 	font-size: 25px;
 	margin-left: 1em;
 }
@@ -44,44 +72,18 @@
 #social p{
 	padding-left: 2em;
 	text-align: center;
-}
-#social{	
-	background-image: url("../images/social.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	min-width: 40%;
-	position: relative;
 	color:white;
 	font-weight: bold;
 	float:left;
-	margin-top: 3%;
 }
 
-#social ul{
-	padding-top:1em;
-	text-align: center;
-	list-style: none;
-	font-size: 25px;
-}
-#social li{
-	margin-top: 10px;
-}
-#social a{
-	color: white;
-}
+@media (min-width:850px) {
 
-#social .footer{
-	width:100%;
-	height: 10%;
-	background-color: #DEDECD;
-	bottom: 20px;
-}
-#foreground{
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height: 100%;
-	z-index:10;
+	#aboutus{
+		max-width: 60%;
+	}
+
+	#social{	
+		max-width: 40%;
+	}
 }
