@@ -8,6 +8,14 @@
 	font-size: 18px;
 }
 
+#small{
+	display: none;
+}
+
+#larger{
+	display: larger;
+}
+
 .suggestion{
 	height: 200px;
 	width:100%;
@@ -19,7 +27,7 @@
 }
 
 .day{
-	width: 18%;
+	width: 8.9em;
 	height: 100%;
 	background-color: white;
 	float:left;
@@ -27,15 +35,18 @@
 
 .day p{
 	font-weight: bold;
-	padding:28%;
+	padding:25%;
 	font-size: 30px;
+	word-break: break-all;
 }
 .movie-image{
-	float: left;
+
+	overflow: hidden;
 	height: 100%;
-	width:82%;
 	font-size: 30px;
 	text-align: center;
+/*	background-position: 50% 0;*/
+	background-position: center;
 }
 .movie-image h3{
 	padding: 6%;
@@ -59,7 +70,6 @@
 	background-image: url('../images/week1.jpg');
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0 10%;
     background-size:cover; 
 }
 
@@ -67,7 +77,6 @@
 	background-image: url('../images/week2.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: center;
     background-size:cover; 
 }
 
@@ -75,7 +84,6 @@
 	background-image: url('../images/week3.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: center;
     background-size:cover; 
 }
 
@@ -83,7 +91,6 @@
 	background-image: url('../images/week4.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: 15% 16%;
     background-size: cover; 
 }
 
@@ -91,7 +98,6 @@
 	background-image: url('../images/week5.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: 12% 12%;
     background-size: cover; 
 }
 
@@ -99,7 +105,6 @@
 	background-image: url('../images/week6.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: 0% 20%;
     background-size: cover; 
 }
 
@@ -107,7 +112,21 @@
 	background-image: url('../images/week7.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: 0 -300%; 
     background-size: cover; 
+}
+
+@media(max-width: 700px){
+	#page-body{
+		margin: 0;
+	}
+	#small	{
+		display: block;
+	}
+	#larger {
+		display: none;
+	}
+	.day{
+		max-width: 3em;
+	}
 }
 
