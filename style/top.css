@@ -5,6 +5,11 @@
 	margin-right: 9%;
 	font-family: 'Josefin Sans', serif;
 	font-size: 18px;
+
+	transition:all 0.6s ;
+    -webkit-transition:all 0.6s ;
+    -o-transition:all 0.6s ;
+    -moz-transition:all 0.6s ;
 }
 
 #top{
@@ -157,4 +162,10 @@ table {
 	background-image: url('../images/spider.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+@media( max-width: 700px){
+	#page-body{
+		margin-left: 0.5em;
+		margin-right: .5em;
+	}
 }
