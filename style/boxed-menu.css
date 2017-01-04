@@ -39,15 +39,14 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	
-	transition:all 1.5s ;
+	transition:all 1.5s linear;
     -webkit-transition:all 0.5s ;
     -o-transition:all 0.5s ;
     -moz-transition:all 0.5s ;
 }
 
 .boxed-menu ul li:hover{
-	background-size: 140% 140%;
-  	background-position: 0 50%;
+  	animation: background-resize 0.5s ease-in-out;
 }
 .boxed-menu{
 	padding-left: 0;
@@ -75,11 +74,6 @@
 
 .boxed-menu #item3{
 	background-image: url('../images/sl.jpg');
-}
-
-.boxed-menu #item3{
-	background-image: url('../images/sl.jpg');
-
 }
 
 .boxed-menu #item4{
@@ -143,4 +137,47 @@
 		margin: 0;
 	}
 
+}
+
+@-webkit-keyframes background-resize {
+	0% {
+		background-position: center;
+    	background-size: 113%;
+  	}
+  	10%{
+		background-position: center;
+    	background-size: 123%;
+  	}
+  20% {
+  		background-position: center;
+    	background-size: 124%;
+  }
+   30% {
+  		background-position: center;
+    	background-size: 126%;
+  } 
+  40% {
+  		background-position: center;
+    	background-size:129%;
+  }
+  50% {
+  		background-position: center;
+    	background-size:132%;
+  }
+  60% {
+  		background-position: center;
+    	background-size:135%;
+  }
+   70% {
+  		background-position: center;
+    	background-size:130%;
+  }
+  80% {
+  		background-position: center;
+    	background-size:125%;
+  }
+  90% {
+  		background-position: center;
+    	background-size:120%;
+  }  
 }

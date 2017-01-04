@@ -51,12 +51,14 @@
 	height: 100%;
 	font-size: 30px;
 	text-align: center;
-/*	background-position: 50% 0;*/
 	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 }
 .movie-image h3{
 	padding: 6%;
-	color: white;
+	color: white; 
 }
 
 .front-link{
@@ -74,51 +76,30 @@
 
 #movie-image-1{
 	background-image: url('../images/week1.jpg');
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover; 
 }
 
 #movie-image-2{
 	background-image: url('../images/week2.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size:cover; 
 }
 
 #movie-image-3{
-	background-image: url('../images/week3.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size:cover; 
+	background-image: url('../images/week3.jpg'); 
 }
 
 #movie-image-4{
-	background-image: url('../images/week4.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size: cover; 
+	background-image: url('../images/week4.jpg'); 
 }
 
 #movie-image-5{
 	background-image: url('../images/week5.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size: cover; 
 }
 
 #movie-image-6{
-	background-image: url('../images/week6.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size: cover; 
+	background-image: url('../images/week6.jpg'); 
 }
 
 #movie-image-7{
-	background-image: url('../images/week7.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size: cover; 
+	background-image: url('../images/week7.jpg'); 
 }
 
 @media(max-width: 700px){
