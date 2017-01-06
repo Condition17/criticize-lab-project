@@ -1,0 +1,13 @@
+In js:
+1. film filter by preferences
+	- gender
+	- period of apparence
+	- prizes
+	- rank
+
+work with JSON
+- sa iti arate daca cinemaurile din apropiere la care il poti vedea
+
+2. Gallery 
+3. Movie roulette
+4. Account( implica consumarea unui api )

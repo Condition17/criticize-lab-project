@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/general.css">
 		<link rel="stylesheet" type="text/css" href="style/menu-icon.css">
-
+		<link rel = "stylesheet" type="text/css" href="style/flatmenu.css">
+		<link rel = "stylesheet" type="text/css" href="style/search.css">
+		<link rel="stylesheet" type="text/css" href="style/reviews.css">
+		<link rel="stylesheet" type="text/css" href="style/loader.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+		<script type="text/javascript" s></script>
 	<meta charset="UTF-8">
 		<title>Criticizer</title>
 	</head>
@@ -46,6 +50,11 @@
 								About us
 							</a>
 						</li>
+						<li>
+							<a href="contribute.html">
+								Contribute
+							</a>
+						</li>						
 					</ul>
 				</nav>
 				<div class="page-title">
@@ -53,14 +62,23 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="category-bar">
-			<h3>REVIEWS</h3>
+			<h3>REVIEWS - search for reviews</h3>
 		</section>
 		
+		<script type="text/javascript" src="js/search-plugin.js"></script>
+		<script type="text/javascript" src="js/data-collector.js"></script>
+
 		<section id="page-body">
-			 <iframe width="560" height="315" src="https://www.youtube.com/embed/s7EdQ4FqbhY">
-			</iframe> 
+			<section id="search-heading">
+				<div id="loader"></div>
+				<input type="text" name="search" id="searchbar" autofocus>
+				<div class="result" id="noresult"><p>No results foud...</p></div>
+				<div class="result" id="found"><p>Results:</p></div>
+			</section>
+			<section id="results">
+			</section>
 		</section>
+		
 	</body>
 </html>

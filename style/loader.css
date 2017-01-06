@@ -1,0 +1,20 @@
+#loader{
+	border-radius: 50%;
+	width:3em;
+	height: 3em;
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: #D1D6CE;
+	border-top: 0.2em solid #646963;
+	border-right: 0.2em solid #646963;
+	border-bottom: 0.2em solid #646963;
+	top: 0;
+	left: 0;
+    animation: spin 1.2s linear infinite;
+    margin-left: 41%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

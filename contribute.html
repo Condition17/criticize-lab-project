@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style/general.css">
+		<link rel="stylesheet" type="text/css" href="style/menu-icon.css">
+		<link rel = "stylesheet" type="text/css" href="style/flatmenu.css">
+		<link rel="stylesheet" type="text/css" href="style/contribute.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+		<script type="text/javascript" s></script>
+	<meta charset="UTF-8">
+		<title>Criticizer</title>
+	</head>
+	<body>
+	
+		<section id="heading">
+			<div id="banner">
+				<nav>
+
+					<div id="line-wrapper">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+
+					<ul class = "menu" >
+						<li>
+							<a href="index.html">Home</a>		
+						</li>
+						<li>
+							<a href="weekly.html">
+								Weekly suggestions
+							</a>
+						</li>
+						<li>
+							<a href="reviews.html">
+								Reviews
+							</a>
+						</li>
+						<li>
+							<a href="top.html">
+								Top Criticizer
+							</a>
+						</li>
+						<li>
+							<a href="about_us.html">
+								About us
+							</a>
+						</li>
+						<li>
+							<a href="contribute.html">
+								Contribute
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="page-title">
+					<h1>Criticizer</h1>
+				</div>
+			</div>
+		</section>
+		<section class="category-bar">
+			<h3>Contribute - submit an original opinion about your favourite movie</h3>
+		</section>
+		
+		<script type="text/javascript" src="js/contribution-form.js"></script>
+
+		<article class="sent-notification">
+			<p>YOUR REVIEW WAS SENT! THANK YOU!</p>
+		</article>
+		
+		<section id="page-body">
+			<article id="form">
+				<h3>ADD MOVIE REVIEW</h3>
+				<form>
+					<input type="text" class="input-field" id="movie-name" placeholder="Movie name" autofocus>
+					<input type="text" class="input-field" id="year" placeholder="Year">
+					<select id="movie-rating">
+						<option value="" disabled selected>Rating</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					<textarea type="text" id="movie-description" placeholder="Review"></textarea>
+					<input type="text" id="director" class="director" placeholder="Director"></input>
+					<button id="add-director" type="button">Add director</button>
+					<br/>
+					<input type="text" id="writer" class="writer" placeholder="Writer">
+					<button id="add-writer" type="button">Add writer</button>
+					<br/>
+					<input type="text" id="actor" class="actor" placeholder="Actor">
+					<button id="add-actor" type="button">Add actor</button>
+					<br/>
+					<input type = "text" id="poster" placeholder="Poster URL"> 
+					<br/>
+				</form>
+				<button id="submit">SUBMIT REVIEW</button>
+			</article>
+		</section>
+		
+	</body>
+</html>
