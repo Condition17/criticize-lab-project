@@ -11,7 +11,6 @@ var addBeforeBtn = function( type, className, placeholder){
 
 }
 var changeIfEmpty = function(formField, cssAttr){
-	console.log(formField);
 	if( formField.value.length == ""){
 		formField.setAttribute("style",cssAttr);
 		return false;
@@ -21,7 +20,7 @@ var changeIfEmpty = function(formField, cssAttr){
 
 
 var interpretData = function(completed){
-	console.log("-->",completed);
+
 	if(completed){
 		fieldsCompleted = true;
 		window.removeEventListener("keyup", checkFields);
@@ -72,7 +71,6 @@ var sotreInformations = function(){
 }
 
 var verifyActiveField = function(){
-	console.log("check");
 	var activeField = document.activeElement;
 	if( activeField.value.length > 0){
 		activeField.style.borderColor = "#17AA7B";

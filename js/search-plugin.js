@@ -46,7 +46,7 @@ var find = function( movie ){
 	data.forEach(function(item){
 		name = item.name.toLowerCase();
 		movie = movie.toLowerCase();
-		console.log(name,movie);
+		// console.log(name,movie);
 		if(name.indexOf(movie) != -1){
 			results.push(item);
 		}
@@ -154,8 +154,9 @@ var deleteResultMessages = function(){
 	document.getElementById("noresult").style.display = "none";	
 	document.getElementById("found").style.display = "none";
 }
+
 var findMovie = function(event){
-	if(event.keyCode >= 37 && event.keyCode <= 40) return;
+	if(event.keyCode >= 37 && event.keyCode <= 40 || event.keyCode == 13) return;
 	selectedPos = -1;
 	movie = this.value;
 	if(movie.length > 0){
