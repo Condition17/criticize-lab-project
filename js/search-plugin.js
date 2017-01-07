@@ -8,6 +8,10 @@ window.onload = function(){
 	collectData("GET",url).then(store).catch(showError);
 	searchbar = document.getElementById("searchbar");
 	searchbar.addEventListener("keyup",findMovie.bind(searchbar));
+	window.addEventListener("keydown",parseKey);
+	searchbar.addEventListener("focus",function(){ document.body.style.backgroundColor = "#696969"});
+	searchbar.addEventListener("blur",function(){ document.body.style.backgroundColor = "#D1D6CE"});
+
 }
 
 
@@ -81,8 +85,8 @@ var drawResults = function( infos, movie ){
 		review.appendChild(imgwrapper);
 
 		title = splitBySeq(item.name,movie);
-		content.innerHTML = "<div class=\"title\"><h3>"+title[0]+"<font color=red>"+title[1].toUpperCase()+"</font>"+
-		title[2].toUpperCase()+"("+item.year+")"+"</h3><h4 class=\"rating\">Rating: "+item.ranking+"</h4></div>"+"<p>"+item.description+"</p>";
+		content.innerHTML = "<div class=\"title\"><h3>"+title[0]+"<font color=#17AA7B>"+title[1].toUpperCase()+"</font>"+
+		title[2].toUpperCase()+"("+item.year+")"+"</h3><h4 class=\"rating\">Rating: "+item.rating+"</h4></div>"+"<p>"+item.description+"</p>";
 		review.appendChild(content);
 		parent.appendChild(review);
 	});
@@ -103,6 +107,8 @@ var deleteResultMessages = function(){
 	document.getElementById("found").style.display = "none";
 }
 var findMovie = function(event){
+	if(event.keyCode >= 37 && event.keyCode <= 40) return;
+	selectedPos = -1;
 	movie = this.value;
 	if(movie.length > 0){
 		clearTimeout(timeout);
@@ -123,3 +129,4 @@ var findMovie = function(event){
 	 }
 
 }
+
